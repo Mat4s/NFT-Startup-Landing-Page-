@@ -1,0 +1,373 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">);
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+ .row {
+     display: flex;
+
+ }
+
+ .column {
+     display: grid;
+ }
+
+ .container {
+     max-width: 90%;
+     margin: 0 auto;
+ }
+
+ header {
+     align-items: center;
+     gap: 2em;
+     padding: 1.5em 0;
+     justify-content: space-between;
+ }
+
+ nav ul {
+     align-items: center;
+     gap: 2em;
+ }
+ 
+ nav a {
+     font-size: 20px;
+     color: #555555;
+ }
+
+ nav li:nth-of-type(4) a {
+    color: #ff3998;
+ }
+ 
+ nav a:hover {
+     color: #ff3998;
+ }
+ 
+
+ .hero, .launch {
+     align-items: center;
+     background-image: url(graphic.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     background-size: contain;
+     padding: 2em 0;
+     min-height: calc(100vh - 88px);
+    }
+
+    .hero div, .launch div {
+        max-width: 500px;
+    }
+
+    .hero h6, .launch h6 {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ff3998;
+    }
+
+    .hero h1 {
+        font-weight: 900;
+        font-size: clamp (60px, 10vw, 100px);
+        color: #111111;
+    }
+
+    .hero p, .launch p {
+        font-size: 20px;
+        color: #555555;
+        padding: 1em 0;
+    }
+
+    .hero a, .launch a {
+        font-size: 20px;
+        color: #111111;
+        border: 4px solid #ff8139;
+        padding: 0.3em 1em;
+        border-radius: 100px;
+    }
+
+    .hero a:hover, .launch a:hover {
+        border-color: #ff3939;
+    }
+
+    .free {
+        position: relative;
+        align-items: center;
+        background-image: url(background.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 2em auto;
+        border-radius: 15px;
+        font-size: 30px;
+
+    }
+
+    .free-content {
+        padding: 2em;
+    }
+
+    .free-content h3 {
+        font-weight: 500;
+        font-size: 30px;
+        color: #111111;
+        padding: 1em 0;
+    }
+
+    .free-content p {
+        font-size: 15px;
+        color: #111111;
+    }
+
+    .card {
+        background: #eeeeee;
+        border-radius: 2px;
+        padding: 5px;
+    }
+
+    .card-content {
+        padding: 1em;
+        gap: 1em;
+
+    }
+    .card-content>* {
+        flex-basis: 100%;
+    }
+    .card-content h6, .release-img h6{
+        font-weight: 500;
+        font-size: 12px;
+        color: #ff8139;
+    }
+
+    .card-right h6 {
+        color: #555555;
+    }
+
+    .card-content h5, .release-img h5 {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 0.5em 0;
+        color: #111111;
+    }
+
+    .card-content p, .release-img .card-left p {
+        font-size: 18px;
+        color: #555555;
+    }
+
+    .card-right .row {
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.5em 0;
+        
+    }
+    .card-content img {
+        max-width: 15px;
+    }
+
+    .logos {
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        flex-wrap: wrap;
+        padding: 2em 0;
+    }
+
+    .logo>* {
+        flex: 1 1 5em;
+    }
+     .logos img {
+         max-width: 100px;
+     }
+
+     .auction {
+         padding: 2em 0;
+     }
+
+     .auction-content h2 {
+         font-weight: 500;
+         font-size: clam(30px 5vw 40px);
+         color: #111111;
+     }
+
+     .auction-content p {
+         font-size: 2em 0;
+         color: #555555;
+         padding: 1em 0;
+     }
+
+     .auction-cards {
+        padding: 2em;
+        gap: 2em;
+        overflow: scroll;
+        justify-content: space-between;
+     }
+
+     .auction-card .card {
+         min-width: 290px;
+     }
+
+
+     .launch {
+         background-image: url(upsell-footer-image.svg);
+         border-width: 3px 0px;
+         border-style: solid;
+         border-color: #555555;
+         margin: 2em auto;
+     }
+
+     .launch h1 {
+         font-weight: 900;
+         font-size: clamp(50px 10vw 60px);
+         color: #111111;
+     }
+
+    
+
+     .footer {
+         padding: 2em 0;
+         flex-wrap: wrap;
+         gap: 2em;
+     }
+
+     .footer>* {
+         flex: 1 1 25em;
+
+     }
+
+     .footer-content p {
+            font-size: 20px;
+            color: #111111;
+            padding: 1em 0;
+     }
+
+     .social-links {
+         align-items: center;
+         gap: 2em;
+     }
+     
+     .social-links a{
+        fill: #555555;
+    }
+
+    .social-links a:hover {
+        fill: #ff3998;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .footer-links>* {
+        flex: 1 1 5em;
+    }
+
+    .footer-links h3 {
+        font-weight: 700;
+        color: #555555;
+        font-size: clamp(20px 5vw 25px);
+        padding-bottom: 1em;
+    }
+
+    .footer-links li + li {
+        padding-top: 1em;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+        color: #555555;
+    }
+
+    .footer-links a:hover {
+        color: #555555;
+    }
+   
+    @media screen and (max-width:800px) {
+        .toggMenu {
+            position: absolute;
+            right: 5%;
+            background-image: url(menu.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            width: 30px;
+            height: 30px;
+            padding: 2em;
+            transition: background-size 0.3s;
+        }
+
+        .toggMenu.activate {
+            position: fixed;
+            background-image: url(menu.png);
+            background-size: 25px;
+        }
+
+        .navigation {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-height: 0;
+            opacity: 0;
+            transform-origin: top;
+            transform: scale(0);
+        }
+        .navigation.active {
+            position: fixed;
+            inset: 0;
+            margin: auto;
+            max-height: 100%;
+            opacity: 1;
+            background: #ffffff;
+            transform: scale(1);
+        }
+        
+        nav ul {
+            flex-direction: column;
+        }
+
+        .hero, .launch{
+            background-position: bottom left;
+            background-size: cover;
+        }
+
+        .free-cards {
+            transform: scale(0.4);
+        }
+
+        .free-card {
+            padding: 1em ;
+        }
+        .release-img{
+            justify-content: center;
+        }
+
+        .release-img .card-left {
+            display: none;
+
+        }
+        .release-content {
+            padding: unset;
+        }
+        }
